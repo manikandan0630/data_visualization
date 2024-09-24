@@ -1,7 +1,7 @@
 const express=require("express")
 const cors=require("cors")
 const getConnection=require("./database/connection")
-// const routes=require("./routes/dashboard_routes")
+const routes=require("./routes/dashBoardRouter")
 const routes1=require("./routes/adminAuthRouter")
 const app=express()
 app.use(express.json())
@@ -10,7 +10,7 @@ app.use(cors())
 //database connection
 getConnection()
 //routing
-// app.use(routes)
+app.use(routes)
 //admin auth
 app.use(routes1)
 

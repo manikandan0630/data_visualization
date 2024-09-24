@@ -1,7 +1,8 @@
 const express=require("express")
+const LineChart=require("../controllers/dashBoard")
 const router=express.Router()
 
-router.post("/api/auth/admin",)
+router.get("/api/line",LineChart.LineChart)
 
 
 module.exports=router
