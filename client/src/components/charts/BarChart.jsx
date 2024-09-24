@@ -7,8 +7,9 @@ const BarChart = () => {
         axios.get("http://localhost:4000/api/barchart").then((res)=>setData(res.data.data))
     },[])
   return (
-    <div className="w-2/5 bg-white ">
-          <Bar
+    <div className="w-2/5 bg-white rounded-sm px-4  ">
+        <h1 className="text-center font-bold py-3"> BarChart</h1>
+          <Bar className='mt-36'
             data={{
               labels: data.map((ele) => ele.label),
               datasets: [
@@ -22,6 +23,7 @@ const BarChart = () => {
                     "rgba(253,135,135,0.8)",
                   ],
                   borderRadius: 5,
+                  
                 },
               ],
             }}

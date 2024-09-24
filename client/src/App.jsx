@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={success ? <Dashboard /> : <AdminLogin />}
+          element={success=="true" ? <Dashboard /> : <AdminLogin />}
         ></Route>
       </Routes>
     </BrowserRouter>

@@ -11,7 +11,8 @@ const DoughnutRound = () => {
       .catch((e) => console.log(e));
   }, []);
   return (
-    <div className="w-2/5 bg-white  ">
+    <div className="w-2/5 bg-white rounded-sm  pb-5 px-10">
+      <h1 className="text-center font-bold py-3"> Doughnut</h1>
       <Doughnut
         data={{
           labels: data.map((ele) => ele.label),

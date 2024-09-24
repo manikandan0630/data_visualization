@@ -11,7 +11,8 @@ function LineChart() {
   }, []);
   return (
     <div>
-      <div className="w-2/4 mx-auto my-10 px-8 py-5 bg-white">
+      <div className="w-2/4 mx-auto mt-32 px-8 py-5 rounded-sm bg-white">
+      <h1 className="text-center font-bold pb-4">Line Chart</h1>
         <Line
           data={{
             labels: revenuData.map((ele) => ele.label),
