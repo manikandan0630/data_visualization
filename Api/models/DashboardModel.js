@@ -18,6 +18,6 @@ const LineSchema=new mongoose.Schema({
 
 })
 
-const LineModel=mongoose.model("data",LineSchema)
+const LineModel=mongoose.model("linedata",LineSchema)
 
 module.exports=LineModel;
