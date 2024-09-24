@@ -36,6 +36,11 @@ const BarChart=async(req,res)=>{
         })
     }
 }
+
+
+//DoughNut 
+
+
 module.exports={
     LineChart,
     BarChart,

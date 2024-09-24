@@ -1,7 +1,7 @@
 const express=require("express")
 const cors=require("cors")
 const getConnection=require("./database/connection")
-const revenurouter=require("./routes/dashBoardRouter")
+const revenurouter=require("./routes/LineChartRoute")
 const adminrouter=require("./routes/adminAuthRouter")
 const barouter=require("./routes/BarChartRoute")
 const app=express()
