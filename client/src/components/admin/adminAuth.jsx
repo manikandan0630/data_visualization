@@ -129,7 +129,7 @@ const AdminAuth = () => {
         </div>
         <div className="flex-1 bg-green-100 text-center hidden lg:flex">
           <div
-            className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat back"
+            className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat back1"
             
           ></div>
         </div>
