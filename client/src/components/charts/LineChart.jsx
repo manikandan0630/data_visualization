@@ -20,13 +20,13 @@ function LineChart() {
               {
                 label: "Revenue",
                 data: revenuData.map((ele) => ele.revenue),
-                backgroundColor: "#064ff0",
+                backgroundColor: "#41BEF4",
                 borderColor: "#064ff0",
               },
               {
                 label: "cost",
                 data: revenuData.map((ele) => ele.cost),
-                backgroundColor: "#ff3030",
+                backgroundColor: "#ADE9C5",
                 borderColor: "#ff3030",
               },
             ],

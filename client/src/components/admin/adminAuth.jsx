@@ -23,71 +23,24 @@ const AdminAuth = () => {
 
         //check the response and setting the login true or false
         if (res.data.message == "success") {
-          window.localStorage.setItem("login", "true");
+          window.sessionStorage.setItem("login", "true");
           window.location.reload();
           // navigate("/");
         } else {
           alert("Please enter the correct details")
           window.location.reload()
-          window.localStorage.setItem("login", "false");
+          window.sessionStorage.setItem("login", "false");
         }
       })
       .catch((e) => {
-        window.localStorage("login", "false");
+        window.sessionStorage("login", "false");
         res.json({
           message: e.message,
         });
       });
   };
   return (
-    // <div className="mt-10 sm:mt-40 border sm:w-2/5 w-11/12 m-auto shadow-lg rounded-md  ">
-    //   <h1 className="text-center font-bold text-lg sm:text-xl text-white mt-10 ">Admin Login</h1>
-    //   <form
-    //     className="w-full sm:w-2/4 mx-auto my-8 flex flex-col p-4 sm:p-0"
-    //     onSubmit={handleSubmit}
-    //   >
-    //     <div className="relative">
-    //       <input
-    //         type="text"
-    //         name="username"
-    //         placeholder="Username"
-    //         className="px-4 sm:px-7 py-3 outline-none rounded-sm w-full"
-    //         value={data.username}
-    //         onChange={(e) => setData({ ...data, username: e.target.value })}
-    //       />
-    //       <FaUserAlt className="absolute right-3 top-3 sm:top-4" />
-    //     </div>
-    //     <div className="relative mt-5">
-    //       <input
-    //         type={showPassword ? "text" : "password"}
-    //         name="password"
-    //         placeholder="Password"
-    //         className="px-4 sm:px-7 py-3 outline-none rounded-sm w-full"
-    //         id="pwd"
-    //         value={data.password}
-    //         onChange={(e) => setData({ ...data, password: e.target.value })}
-    //       />
-    //       {showPassword ? (
-    //         <FaEye
-    //           className="absolute top-3 sm:top-4 right-3 cursor-pointer"
-    //           onClick={() => setShowPassword(false)}
-    //         />
-    //       ) : (
-    //         <FaEyeSlash
-    //           className="absolute top-3 sm:top-4 right-3 cursor-pointer"
-    //           onClick={() => setShowPassword(true)}
-    //         />
-    //       )}
-    //     </div>
-    //     <button
-    //       type="submit"
-    //       className="mt-5 font-bold border mx-auto py-2 sm:py-3 px-4 w-2/3 sm:w-1/2 outline-none rounded-3xl bg-white hover:bg-slate-400 hover:text-white"
-    //     >
-    //       Login
-    //     </button>
-    //   </form>
-    // </div>
-
+    
     <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
       <div className="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1">
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">

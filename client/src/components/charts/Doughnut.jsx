@@ -22,11 +22,12 @@ const DoughnutRound = () => {
 
               data: data.map((ele) => ele.value),
               backgroundColor: [
-                "rgba(43,63,220,0.8)",
-                "rgba(250,192,19,0.8)",
-                "rgba(253,135,135,0.8)",
+                "#00C086",
+                "#3A96FF",
+                "#FFDC69",
               ],
               borderRadius: 5,
+              
             },
           ],
         }}

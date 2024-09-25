@@ -6,7 +6,7 @@ function App() {
  
   const [success,setSuccess]=useState(false);
   useEffect(()=>{
-     const data=window.localStorage.getItem("login")
+     const data=window.sessionStorage.getItem("login")
      setSuccess(data)
   },[])
 
